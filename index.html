@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                Port<span>folio</span>
+            </div>
+            <nav>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#contact">contact</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#">project</a></li>
+                <li class="hideOnMobile"><a href="#service">service</a></li>
+                <li><img src="image/menubar.png" alt="" class="menu" onclick="sideStart()"></li>
+            </nav>
+            <nav class="sideMenu">
+                <li><div class="x" onclick="sideClose()">X</div></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#service">Service</a></li>
+                
+            </nav>
+        </div>
+        <div class="home" id="home">
+            <div class="left">
+                <div>
+                    <h3>Hi! I Am <span>Akash Tiwari</span></h3>
+                    <h1><span class="auto-type"></span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Mollitia nulla corrupti temporibus esse quasi adipisci ex eaque <br> perferendis! Animi, eos.</p>
+                    <div class="view-btn">
+                        <button class="hire">Hire Me</button>
+                        <button class="project"><a href="project">View Project</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image">
+                    <img src="image/aka2.png" alt="akash">
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <div class="left">
+                <h2>Contact Me</h2>
+                <div class="cont">
+                    <img src="icons/email.png" alt="email">
+                    <a href="#" class="email">akashtiwari9565@gmail.com</a>
+                </div>
+                <div class="cont">
+                    <img src="icons/phone (1).png" alt="mobile">
+                    <span>9565560998</span>
+                </div>
+                <div class="cont-icon">
+                    <a href="https://www.facebook.com/profile.php?id=100076355423185&mibextid=ZbWKwL">
+						<img src="icons/communication.png" alt="facebook">
+					</a>
+                    <a href="https://www.youtube.com/@AkashwebTac">
+						<img src="icons/youtube.png" alt="youtube">
+					</a>
+                    <a href="https://www.instagram.com/akash_tiwari9565">
+						<img src="icons/social.png" alt="instagram">
+					</a>
+                    
+                    <a href="https://whatsapp.com/channel/0029VaDF26pBA1et5iORfY1F">
+                        <img src="icons/whatsapp.png" alt="whatsapp">
+                    </a>
+                </div>
+                <button><a href="image/cv.jpg">Download CV</a></button>
+            </div>
+            <div class="right">
+                <form>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Submit" name="submit" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <div class="about-image">
+                <img src="image/akash3.png" alt="akash">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis molestias itaque sed dolore, commodi minima iusto eveniet, cum aliquid excepturi doloremque facilis error quas mollitia vel ipsum iure. Incidunt ipsum velit tempore deserunt delectus consequuntur.</p>
+                <div class="skill">
+                    <ul>
+                        <li><h3>Skill</h3></li>
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Bootstrap, Tailwin</li>
+                        <li>MySQL, MongoDB</li>
+                        <li>ExpressJS, NodeJS</li>
+                    </ul>
+                    <ul>
+                        <li><h3>Education</h3></li>
+                        <li>10th Passing Year 2020</li>
+                        <li>12th Passing Year 2022</li>
+                        <li>BCA Passing Year 2025</li>
+                    </ul>
+                    <ul>
+                        <li><h3>Experience</h3></li>
+                        <li>I am fresher</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="service">
+            <div class="hed">
+                <h2>Service</h2>
+            </div>
+            <div class="service-card">
+                <div class="card">
+                    <span>*</span>
+                    <h3>Web Design</h3>
+                    <p>Build in using HTML, CSS, JavaScript and ReactJS library use in this website.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card">
+                    <span>*</span>
+                    <h3>UI/UX Design</h3>
+                    <p>Create in the UI/UX Canvas and WordPress template creation of website.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="card">
+                    <span>*</span>
+                    <h3>App Development</h3>
+                    <p>App development build in use to Android studio editer and useing Python, Java languages.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><h3>Contact</h3></li>
+                <li>9565560998</li>
+                <li>Uttar Pradesh</li>
+                <li>Gonda</li>
+                <li>271202</li>
+            </ul>
+            <ul>
+                <li><h3>Skill</h3></li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>MySQL, MongoDB</li>
+                <li>ReactJS, ExpressJS, NodeJS</li>
+                <li>Full Stack Developer</li>
+            </ul>
+            <ul>
+                <li><h3>Qualification</h3></li>
+                <li>BCA</li>
+                <li>MSITM Degree College</li>
+                <li>College code : 604</li>
+                <li>Dr. RML Avadh University</li>
+            </ul>
+            <ul>
+                <li><h3>Projects</h3></li>
+                <li>E-commerce</li>
+                <li>Hospital management system</li>
+                <li>Portfolio</li>
+                <li>Virtual assistent</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+  <script src="script.js"></script>
+  <!-- our aos data -->
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 300,
+        duration: 1000,
+        
+    });
+  </script>   -->
+</body>
+</html>

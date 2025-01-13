@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.navbar{
+    height: auto;
+    width: 100%;
+    padding: 15px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.navbar .logo{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+.navbar .logo span{
+    color: blue;
+}
+.navbar li{
+    padding: 5px;
+    list-style: none;
+}
+.navbar li:hover{
+    border-radius: 3px;
+    box-shadow: 0px 0px 8px 0px white;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.menu{
+    display: none;
+}
+.sideMenu{
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255,0.2);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+.menu{
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+.sideMenu li a{
+    font-weight: 600;
+}
+.sideMenu .x{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 10px 0px 0px 5px;
+    cursor: pointer;
+    color: white;
+}
+.menu{
+    display: none;
+}
+@media(max-width:850px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .service{
+        padding: 0px 0px;
+    }
+    .service .hed{
+        /* margin-top: 350px; */
+        font-size: 1.5rem;
+    }
+    .service-card{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact{
+        margin-top: 300px;
+    }
+    .contact .left{
+        width: 100%;
+    }
+    .contact .left h2{
+        font-size: 1.5rem;
+        margin-top: 100px;
+    }
+    .contact .right{
+        width: 100%;
+    }
+    .contact .right form input{
+        width: 200px;
+    }
+    .contact .left .cont .email{
+        font-size: 1.1rem;
+    }
+    .about{
+        margin-top: 200px;
+    }
+    .about .about-content{
+            width: 100%;
+    }
+    .service .hed h2{
+        font-size: 2.1rem;
+    }
+    .footer{
+        margin-top: 700px;
+    }
+    .footer ul h3{
+        font-size: 1.5rem;
+    }
+    .footer ul li{
+        font-size: 1.2rem;
+    }
+    
+}
+.home{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+}
+.home .left{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.home .left h3{
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+}
+.left h3 span{
+    font-size: 25px;
+    color: rgb(226, 43, 208);
+}
+.left h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: rgb(226, 43, 208);
+    padding: 10px 0px;
+}
+.left p{
+    color: white;
+    font-size: 20px;
+}
+.view-btn{
+    display: flex;
+    gap: 30px;
+    margin: 25px 0px;
+}
+
+.home .left button{
+    padding: 8px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px white;
+}
+.left .hire{
+    background-color: rgb(226, 43, 208);
+    color: black;
+}
+.left .project{
+    background-color: black;
+    color: rgb(226, 43, 208);
+    /* border: 1px solid rgb(226, 43, 208); */
+}
+.left .project a{
+    text-decoration: none;
+}
+.home .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .image{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px 5px white;
+}
+.right .image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.service{
+    height: 500px;
+    width: 100%;
+    padding: 20px 10%;
+}
+.service .hed{
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    padding: 15px 0px;
+}
+.service .service-card{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.service-card .card{
+    height: auto;
+    width: 340px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(59, 22, 22);
+    border-radius: 5px;
+}
+.service-card .card span{
+    font-size: 2rem;
+    padding: 10px 0p;
+    text-align: center;
+}
+.service-card .card h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.service-card .card p{
+    font-size: 1.3rem;
+    padding: 10px 0px;
+}
+.contact{
+    height: 700px;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.contact .left{
+    display: flex;
+    flex-direction: column;
+}
+.contact .left h2{
+    font-size: 2rem;
+    padding: 20px 0px;
+}
+.contact .left .cont{
+    display: flex;
+    gap: 10px;
+    font-size: 1.5rem;
+}
+.contact .left .cont img{
+    height: 40px;
+    width: 30px;
+    padding: 10px 0px;
+    cursor: pointer;
+}
+.contact .left .cont .email{
+    padding: 10px 0px;
+}
+.contact .left .cont-icon{
+    padding: 20px 0px;
+    display: flex;
+    gap: 20px;
+}
+.contact .left .cont-icon img{
+    height: 28px;
+    width: 28px;
+    cursor: pointer;
+}
+.contact .left button{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(31, 54, 25);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact .left button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.contact .right{
+
+    display: flex;
+    flex-direction: column;
+}
+.contact .right form input{
+    width: 270px;
+    height: 40px;
+    padding: 10px 0px;
+    background-color: rgb(59, 22, 22);
+    outline: none;
+    border: none;
+    margin: 10px 0px;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+}
+.contact .right form{
+    display: flex;
+    flex-direction: column;
+}
+.contact .right form textarea{
+    max-width: 300px;
+    min-height: 150px;
+    background-color: rgb(59, 22, 22);
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: white;
+    margin: 10px 0px;
+}
+.contact .right form .btn{
+    height: 45px;
+    width: 150px;
+    background-color: red;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.about-image{
+    height: 400px;
+    width: 250px;
+}
+.about-image img{
+    height: 100%;
+    width: 100%;
+}
+.about-content{
+    height: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-content h2{
+    color: white;
+    padding: 10px 0px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about-content p{
+    padding: 10px 0px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(222, 193, 193);
+}
+.about-content .skill{
+    display: flex;
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.about-content .skill li h3{
+    font-size: 1.6rem;
+}
+.about-content .skill li{
+    list-style: none;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
+.footer{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    color: white;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer li h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+.footer ul li{
+    list-style: none;
+    padding: 5px 0px;
+    font-size: 1.2rem;
+}
